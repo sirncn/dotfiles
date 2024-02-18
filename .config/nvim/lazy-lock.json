@@ -1,5 +1,7 @@
 {
   "catppuccin": { "branch": "main", "commit": "9703f227bfab20d04bcee62d2f08f1795723b4ae" },
   "lazy.nvim": { "branch": "main", "commit": "aedcd79811d491b60d0a6577a9c1701063c2a609" },
-  "nvim-autopairs": { "branch": "master", "commit": "2e8a10c5fc0dcaf8296a5f1a7077efcd37065cc8" }
+  "lualine.nvim": { "branch": "master", "commit": "7d131a8d3ba5016229e8a1d08bf8782acea98852" },
+  "nvim-autopairs": { "branch": "master", "commit": "2e8a10c5fc0dcaf8296a5f1a7077efcd37065cc8" },
+  "nvim-web-devicons": { "branch": "master", "commit": "14ac5887110b06b89a96881d534230dac3ed134d" }
 }
