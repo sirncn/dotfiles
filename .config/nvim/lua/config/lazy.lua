@@ -9,8 +9,11 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
-  spec = { },
+  spec = {
+    { import = "plugins" },
+  },
   defaults = { lazy = true },
+  install = { colorscheme = { "catppuccin" } },
   checker = {
     enabled = true,
     notify = false,
