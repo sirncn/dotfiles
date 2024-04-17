@@ -10,7 +10,7 @@ return {
       mason = true,
       treesitter = true,
       telescope = true,
-      which_key = true,
+      cmp = true
     },
   },
   config = function()
