@@ -14,10 +14,11 @@ vim.opt.relativenumber = true -- show relative line number
 vim.opt.title = true
 
 -- indentation
-vim.opt.shiftwidth = 2 -- N of spaces for indent width
-vim.opt.tabstop = 2 -- N of spaces for tabs
+vim.opt.expandtab = false
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
 vim.opt.autoindent = true -- copy indent from prev line
-vim.opt.smartindent = true
+-- vim.opt.smartindent = true
 
 -- search settings
 vim.opt.ignorecase = true -- ignore case
@@ -32,7 +33,6 @@ vim.opt.backup = false
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
 vim.opt.laststatus = 2
-vim.opt.expandtab = true
 vim.opt.scrolloff = 10
 vim.opt.shell = "bash"
 vim.opt.backupskip = { "/tmp/*", "/private/tmp/*" }
@@ -50,8 +50,8 @@ vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
-  pattern = "*",
-  command = "set nopaste",
+	pattern = "*",
+	command = "set nopaste",
 })
 
 -- Add asterisks in block comments
