@@ -13,7 +13,6 @@ require("lazy").setup({
 		{ import = "plugins" },
 	},
 	defaults = { lazy = true },
-	install = { colorscheme = { "catppuccin" } },
 	checker = {
 		enabled = true,
 		notify = false,
