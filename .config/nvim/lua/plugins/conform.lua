@@ -1,6 +1,5 @@
 return {
 	"stevearc/conform.nvim",
-	lazy = true,
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local conform = require("conform")
@@ -18,10 +17,11 @@ return {
 				markdown = { { "prettierd", "prettier" } },
 				graphql = { { "prettierd", "prettier" } },
 				lua = { "stylua" },
+				["*"] = { "codespell" },
+				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
-				async = false,
 				timeout_ms = 500,
 			},
 		})
@@ -29,8 +29,7 @@ return {
 		vim.keymap.set({ "n", "v" }, "<leader>cf", function()
 			conform.format({
 				lsp_fallback = true,
-				async = false,
-				timeout_ms = 500,
+				async = true,
 			})
 		end, { desc = "Format file or range" })
 	end,
