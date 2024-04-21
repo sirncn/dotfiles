@@ -31,28 +31,20 @@ vim.opt.clipboard:append("unnamedplus") -- use system clipboard as default regis
 
 vim.opt.backup = false
 vim.opt.showcmd = true
+vim.opt.showmode = false
 vim.opt.cmdheight = 0
 vim.opt.laststatus = 2
 vim.opt.scrolloff = 10
 vim.opt.shell = "bash"
+vim.opt.spelllang = { "en", "fr" }
 vim.opt.backupskip = { "/tmp/*", "/private/tmp/*" }
 vim.opt.inccommand = "split"
 vim.opt.smarttab = true
 vim.opt.breakindent = true
 vim.opt.wrap = false -- No Wrap lines
+vim.opt.formatoptions = "jcql"
 vim.opt.backspace = { "start", "eol", "indent" } -- allow backspace on indent, end of line or insert mode start position
 vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
 vim.opt.wildignore:append({ "*/node_modules/*" })
 
--- Undercurl
-vim.cmd([[let &t_Cs = "\e[4:3m"]])
-vim.cmd([[let &t_Ce = "\e[4:0m"]])
-
--- Turn off paste mode when leaving insert
-vim.api.nvim_create_autocmd("InsertLeave", {
-	pattern = "*",
-	command = "set nopaste",
-})
-
--- Add asterisks in block comments
-vim.opt.formatoptions:append({ "r" })
+vim.g.markdown_recommended_style = 0
