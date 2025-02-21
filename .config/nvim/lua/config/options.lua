@@ -18,7 +18,6 @@ vim.opt.expandtab = false
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.autoindent = true -- copy indent from prev line
--- vim.opt.smartindent = true
 
 -- search settings
 vim.opt.ignorecase = true -- ignore case
@@ -35,6 +34,7 @@ vim.opt.showmode = false
 vim.opt.cmdheight = 0
 vim.opt.laststatus = 2
 vim.opt.scrolloff = 10
+vim.opt.mouse = ""
 vim.opt.shell = "bash"
 vim.opt.spelllang = { "en", "fr" }
 vim.opt.backupskip = { "/tmp/*", "/private/tmp/*" }
