@@ -15,7 +15,7 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
-				"tsserver",
+				"ts_ls",
 				"html",
 				"cssls",
 				"lua_ls",
