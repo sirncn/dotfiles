@@ -1,0 +1,6 @@
+default_roles:
+  - fzf
+  - kitty
+  - lazygit
+  - neovim
+  - tmux
